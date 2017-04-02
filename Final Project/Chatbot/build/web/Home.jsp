@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -29,7 +30,8 @@
                 });
             });
         </script>
-
+        
+       
     </head>
     <body>
         <!---start-wrap---->
@@ -60,13 +62,13 @@
         <div class="top-nav">
             <div class="wrap">
                 <ul>
-                    <li class="active"><a href="Home.html">Home</a></li>
+                    <li class="active"><a href="Home.jsp">Home</a></li>
                     <li><a href="Aboutus.html">About us</a></li>
                     <li><a href="Program.html">Program</a></li>
-                    <li><a href="Campuses.html">Campuses</a></li>
-                    <li><a href="University Partners.html">University Partners</a></li>
+                    <li><a href="Management.html">Management</a></li>
+                    <li><a href="University.html">University Partners</a></li>
                     <li><a href="Contactus.html">Contact us</a></li>
-                    <li><a href="SIS.html">SIS</a></li>
+                    
 
                 </ul> <div class="clear"> </div>
             </div>
@@ -136,7 +138,7 @@
                 <div class="content-top-grid">
                     <div class="content-top-grid-header">
                         <div class="content-top-grid-pic">
-                            <img src="images/timer.png" /></a>
+                            <img src="images/timer.png" />
                         </div>
                         <div class="content-top-grid-title">
                             <h3 align="center">News </h3>
@@ -253,15 +255,14 @@
                     <div class="footer-grid">
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                                 
-                            <tr> <td width="31%">CHAT WITH US</td></tr>
-                            <tr> <td><form name="form1" method="post" action="">
+                            <tr> <td><form name="form1" method="post" action="Chat">
                               <p>
-                                <textarea name="chat" cols="40" rows="10" id="chat" placeholder="Hello. How may I help you?"></textarea>
+                                <textarea name="chat" cols="40" rows="10" id="chat" placeholder="Hello. How may I help you?" >${chattxt}</textarea>
                               </p>
+                              <input type="text" name="chattext" />
                               <p>
-                                <input type="submit" name="button" id="button" value="Submit">
-                              </p>
-                            </form></td>
+                                 ${dd}
+                                <input type="submit" name="button" id="button" value="Submit"></td>
                           </tr>
                           </table>
                          </div>

@@ -60,16 +60,6 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <link rel=\"stylesheet\" href=\"css/style1.css\">\n");
       out.write("        <link rel=\"shortcut icon\" href=\"images/05.jpg\"> \n");
       out.write("\n");
-      out.write("\n");
-      out.write("        <link href=\"css/style.css\" rel=\"stylesheet\" type=\"text/css\"  media=\"all\" />\n");
-      out.write("        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>\n");
-      out.write("        <link rel=\"stylesheet\" href=\"css/responsiveslides.css\">\n");
-      out.write("\n");
-      out.write("        <link rel=\"stylesheet\" href=\"http://www.icbt.lk/assets/sammy_new/styles/dropdowns.css\">\n");
-      out.write("        <link rel=\"stylesheet\" href=\"http://www.icbt.lk/assets/sammy_new/styles/dropdowns-skin-discrete.css\">\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("        <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js\"></script>\n");
       out.write("        <script src=\"js/responsiveslides.min.js\"></script>\n");
       out.write("\n");
       out.write("\n");
@@ -80,8 +70,8 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <body>  \n");
       out.write("\n");
       out.write("    <center>\n");
-      out.write("        <img src=\"images/s2.png\" align=\"middle\">\n");
-      out.write("        <font color=\"#000033\" face=\"Georgia, Times New Roman, Times, serif\" size=\"+3\" > <b> ICBT CAMPUS </b></font> \n");
+      out.write("        <img src=\"images/logo.png\" align=\"middle\">\n");
+      out.write("        \n");
       out.write("    </center>\n");
       out.write("\n");
       out.write("\n");
@@ -103,8 +93,8 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <span><label>User Type: </label></span>\n");
       out.write("                <span><select name=\"userType_Id\" id=\"userType_Id\">\n");
       out.write("                        <option>admin</option>\n");
-      out.write("                        <option>manager</option>\n");
       out.write("                        <option>staff</option>\n");
+      out.write("                        <option>student</option>\n");
       out.write("                    </select></span>\n");
       out.write("            </div>\n");
       out.write("            <p>&nbsp; </p>\n");
@@ -144,7 +134,6 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("</body>\n");
       out.write("</html>\n");
-      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

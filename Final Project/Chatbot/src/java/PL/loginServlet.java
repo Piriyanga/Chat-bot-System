@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-@WebServlet(name = "loginServlet_1", urlPatterns = {"/loginServlet_1"})
+@WebServlet(name = "loginServlet", urlPatterns = {"/loginServlet"})
 public class loginServlet extends HttpServlet {
 
       DB obj = DB.getInstance();
@@ -26,8 +26,8 @@ public class loginServlet extends HttpServlet {
         out.println("<!DOCTYPE html>");
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>SKY CONSTRUCTION</title>");
-        out.println("<link rel='shortcut icon'  href='images/s2.png'>");
+        out.println("<title>ICBT | leading tertiary education provider in Sri Lanka </title>");
+        out.println("<link rel='shortcut icon'  href='images/05.jpg'>");
 
         out.println("</head>");
 
