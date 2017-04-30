@@ -65,8 +65,8 @@ public class loginServlet extends HttpServlet {
 			//setting cookie to expiry in 30 mins
 
                     response.addCookie(loginCookie);
-                    request.getRequestDispatcher("Manage.jsp").forward(request, response);
-                    response.sendRedirect("Manage.jsp");
+                    request.getRequestDispatcher("viewProfile_Staff.jsp").forward(request, response);
+                    response.sendRedirect("viewProfile_Staff.jsp");
                     
                 } else if (rs.getString(3).equals("student")) {
 
@@ -119,7 +119,7 @@ public class loginServlet extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }

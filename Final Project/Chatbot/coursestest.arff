@@ -1,0 +1,7 @@
+@relation pima_diabetes
+@attribute 'course'  {HND, Diploma, Java}
+@attribute 'duration'  {1year, 3month, 6month}
+@attribute 'fee' {10000.00,100000.00,20000.00,30000.00}
+
+@data
+Diploma,3month,?

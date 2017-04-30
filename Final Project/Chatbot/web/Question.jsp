@@ -134,7 +134,7 @@
                         <li><a href="Admin.jsp">User Entry</a></li>
                         <li><a href="Student.jsp">Manage Students </a></li>
                         <li><a href="Employee.jsp">Manage Employee </a></li>
-                        <li class="active"><a href="Question.jsp">Manage Questions </a></li>
+                     
 
                     </ul>
                 </div>

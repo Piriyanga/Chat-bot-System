@@ -455,8 +455,65 @@ public class DB {
         }
     }
     
+    
+    
+    // chat history
+    
+        // chat history
+    
+        public static boolean ChatHistory(String Question, String Answer, String dateTime) throws Exception {
+
+      
+          boolean result = false;
+        try {
+
+            PreparedStatement ps;
+            conn = CreateConnection();
+
+        PreparedStatement st1= conn.prepareStatement("INSERT INTO chathistory (Question,Answer,dateTime) VALUES (?,?,?)");
+      
+         
+            st1.setString(1, Question);
+            st1.setString(2, Answer);
+            st1.setString(3, dateTime);
+
+            int res = st1.executeUpdate();
+
+            if (res > 0) {
+
+                result = true;
+            }
+            return result;
+        } catch (Exception ex) {
+
+            result = false;
+            return result;
+        }
+
+    }
+    
+     public ResultSet ViewProfilestaff() {
+
+        ResultSet rs;
+
+        try {
+
+            conn = CreateConnection();
+            Statement ps;
+            String statement = "select * from employee where JobRole='Staff'";
+            ps = conn.createStatement();
+            rs = ps.executeQuery(statement);
+
+            return rs;
+        } catch (Exception e) {
+
+            rs = null;
+            return rs;
+        }
+    }
+     
+//end view profile staff
+        
 }
-
-
 
  //--------------------------------------------------------------

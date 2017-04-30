@@ -110,7 +110,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <li><a href=\"Program.html\">Program</a></li>\n");
       out.write("                    <li><a href=\"Management.html\">Management</a></li>\n");
       out.write("                    <li><a href=\"University.html\">University Partners</a></li>\n");
-      out.write("                    <li><a href=\"Contactus.html\">Contact us</a></li>\n");
+      out.write("                    <li><a href=\"Contact.html\">Contact us</a></li>\n");
       out.write("                    \n");
       out.write("\n");
       out.write("                </ul> <div class=\"clear\"> </div>\n");
@@ -304,7 +304,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${chattxt}", java.lang.String.class, (PageContext)_jspx_page_context, null));
       out.write("</textarea>\n");
       out.write("                              </p>\n");
-      out.write("                              <input type=\"text\" name=\"chattext\" />\n");
+      out.write("                              <input type=\"text\" name=\"chattext\" style=\"width: 300px;\" />\n");
       out.write("                              <p>\n");
       out.write("                                 ");
       out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dd}", java.lang.String.class, (PageContext)_jspx_page_context, null));

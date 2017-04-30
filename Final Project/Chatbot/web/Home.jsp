@@ -67,7 +67,7 @@
                     <li><a href="Program.html">Program</a></li>
                     <li><a href="Management.html">Management</a></li>
                     <li><a href="University.html">University Partners</a></li>
-                    <li><a href="Contactus.html">Contact us</a></li>
+                    <li><a href="Contact.html">Contact us</a></li>
                     
 
                 </ul> <div class="clear"> </div>
@@ -259,7 +259,7 @@
                               <p>
                                 <textarea name="chat" cols="40" rows="10" id="chat" placeholder="Hello. How may I help you?" >${chattxt}</textarea>
                               </p>
-                              <input type="text" name="chattext" />
+                              <input type="text" name="chattext" style="width: 300px;" />
                               <p>
                                  ${dd}
                                 <input type="submit" name="button" id="button" value="Submit"></td>
